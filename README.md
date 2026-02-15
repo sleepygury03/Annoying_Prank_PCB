@@ -97,8 +97,6 @@ Programmer: jtag2updi
 
 After selecting the board you must run Tools → Burn Bootloader once.
 
-This does NOT install a bootloader — it programs the chip configuration.
-
 Used settings:
 
 Clock: 1 MHz internal
