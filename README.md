@@ -1,4 +1,4 @@
-# Annoying PCB 🔊
+# Annoying PCB
 
 **Project status: Archived / Not actively maintained**
 
