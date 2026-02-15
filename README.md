@@ -26,9 +26,8 @@ The project was mainly created as a low-power experiment (and as a harmless pran
 * Button wake-up interrupt
 * RTC standby sleep
 * Very low standby current
- * Sleep: ~1 µA
- * Beep: ~5 mA
-
+* Sleep: ~1 µA
+* Beep: ~5 mA
 
 ---
 
@@ -51,15 +50,13 @@ The MCU stays in standby sleep almost all the time and wakes via:
 
 Unused pins are clamped low to reduce leakage current.
 
-All hardware design files are released under the MIT license.
-
 ---
 
 ## Enclosure & Safety
 
 The PCB is intended to be used inside a simple 3D-printed enclosure.
 
-The PCB contains hole trough components, that can short the power supply if placed on metal object. 
+The through-hole components act as standoffs so the battery terminals cannot easily short if the device is placed on a metal surface.
 
 This is mainly a precaution — the device runs from a CR2032 cell and is inherently current-limited, but the mechanical design reduces accidental shorting and improves robustness.
 
@@ -93,8 +90,8 @@ UPDI via **jtag2updi (Arduino Nano programmer)**
 ### Board settings
 
 Chip: ATtiny814
-Clock: Internal (default)
 Programmer: jtag2updi
+(Clock configured via Burn Bootloader: 1 MHz internal)
 
 ### Required fuse configuration (important)
 
@@ -102,11 +99,10 @@ After selecting the board you must run Tools → Burn Bootloader once.
 
 Used settings:
 
-Clock: 1 MHz internal
+* Clock: 1 MHz internal
+* BOD: Disabled 
+* WDT: Disabled
 
-BOD: Disabled (active and sleep)
-
-WDT: Disabled
 ---
 
 ## Dependencies
