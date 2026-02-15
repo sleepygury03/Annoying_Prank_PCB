@@ -26,8 +26,8 @@ The project was mainly created as a low-power experiment (and as a harmless pran
 * Button wake-up interrupt
 * RTC standby sleep
 * Very low standby current
-** Sleep: ~1 µA
-** Beep: ~5 mA
+ * Sleep: ~1 µA
+ * Beep: ~5 mA
 
 
 ---
