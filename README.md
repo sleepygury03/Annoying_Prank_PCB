@@ -56,9 +56,6 @@ Unused pins are clamped low to reduce leakage current.
 
 The PCB is intended to be used inside a simple 3D-printed enclosure.
 
-The through-hole components act as standoffs so the battery terminals cannot easily short if the device is placed on a metal surface.
-
-This is mainly a precaution — the device runs from a CR2032 cell and is inherently current-limited, but the mechanical design reduces accidental shorting and improves robustness.
 
 ---
 
